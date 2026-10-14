@@ -1,0 +1,353 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary: #4F46E5;
+    /* Roxo moderno */
+    --primary-hover: #4338CA;
+    --secondary: #06B6D4;
+    /* Ciano/Azul piscina */
+    --dark: #1F2937;
+    /* Cinza escuro para textos */
+    --light: #F9FAFB;
+    /* Fundo claro */
+    --white: #FFFFFF;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav a {
+    color: var(--dark);
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--primary);
+}
+
+.btn-nav,
+.btn-primary,
+.btn-secondary {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-nav,
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-nav:hover,
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #4B5563;
+}
+
+/* BENEFÍCIOS */
+.beneficios,
+.planos,
+.depoimentos,
+.faq {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.beneficios h2,
+.planos h2,
+.depoimentos h2,
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.beneficios-grid,
+.planos-grid,
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-beneficio {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.card-beneficio .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* TABELA DE PLANOS */
+.card-plano {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-plano.destacado {
+    border: 3px solid var(--primary);
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.preco {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: var(--primary);
+}
+
+.preco span {
+    font-size: 1rem;
+    color: #6B7280;
+}
+
+.card-plano ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.card-plano ul li {
+    margin-bottom: 12px;
+    color: #4B5563;
+}
+
+/* DEPOIMENTOS */
+.depoimento {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    font-style: italic;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+    font-style: normal;
+}
+
+.autor img {
+    border-radius: 50%;
+    background-color: #ddd;
+    /* fallback caso não tenha imagem */
+}
+
+/* FAQ (ACCORDION) */
+.faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: var(--white);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.faq-pergunta {
+    width: 100%;
+    padding: 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark);
+}
+
+.faq-pergunta::after {
+    content: '➕';
+    font-size: 0.9rem;
+}
+
+.faq-item.ativo .faq-pergunta::after {
+    content: '➖';
+}
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #F3F4F6;
+}
+
+.faq-resposta p {
+    padding: 20px;
+    color: #4B5563;
+}
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: #9CA3AF;
+    text-align: center;
+    padding: 40px 5%;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE (CELULARES) */
+@media (max-width: 768px) {
+    header {
+        font-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    /* Esconde o menu no mobile para simplificar */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-plano.destacado {
+        transform: none;
+    }
+}
+
+/* CONFIGURAÇÃO DAS ANIMAÇÕES DE SCROLL */
+.scroll-escondido {
+    opacity: 0;
+    transform: translateY(40px);
+    /* Começa 40px mais abaixo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-visivel {
+    opacity: 1;
+    transform: translateY(0);
+    /* Sobe suavemente para a posição original */
+}
+
+/* CORREÇÃO DA FOTO PRINCIPAL (HERO) */
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    /* Fixa a altura desejada */
+    object-fit: cover;
+    /* Corta as bordas sem esticar a foto */
+    border-radius: 16px;
+    /* Deixa as bordas arredondadas e elegantes */
+}
+
+/* CORREÇÃO DAS FOTOS DOS CLIENTES (DEPOIMENTOS) */
+.autor img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    /* Garante que o rosto fique perfeito no círculo */
+    border-radius: 50%;
+    /* Transforma o quadrado em um círculo perfeito */
+}
