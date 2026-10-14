@@ -45,4 +45,4 @@ Você pode conferir o projeto finalizado e rodando diretamente no seu navegador 
 🔗 **[Acessar a Landing Page PetLover ao Vivo](https://pet-teal-iota.vercel.app/)**
 
 ---
-Desenvolvido por Marcos André da Silva Leite - Conecte-se comigo no linkedin.com/in/marcos-andré-da-silva-leite-6086551a1.
+Desenvolvido por **Marcos André da Silva Leite** - Conecte-se comigo no [Linkedin](linkedin.com/in/marcos-andré-da-silva-leite-6086551a1).
