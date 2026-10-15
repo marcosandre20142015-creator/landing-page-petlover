@@ -1,7 +1,7 @@
 # 🐾 Landing Page de Alta Conversão - Clínica Veterinária PetLover
 
-[![Vercel](https://shields.io)](https://pet-teal-iota.vercel.app/)
-[![Status do Projeto](https://shields.io)](https://github.com/marcosandre20142015-creator/landing-page-petlover)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://pet-teal-iota.vercel.app/)
+[![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)](https://github.com/marcosandre20142015-creator/landing-page-petlover)
 
 Este é um projeto focado em **cenário de mercado real**, desenvolvido como um estudo de caso para a clínica fictícia **PetLover**. O objetivo principal foi criar uma solução digital para resolver um problema crítico de conversão na captação de clientes para o novo plano de saúde pet da empresa.
 
